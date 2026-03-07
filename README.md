@@ -2,9 +2,6 @@
 
 <h3>Modern ASP.NET Core Implementation | .NET 10</h3>
 
-- SKYLITE framework (C#/VB) <br>
-Platform: IIS / .Net framework 4.5 +<br>
-
 - SKYNET framework (C# only)<br>
 Platform: ASP.NET Core / .NET 10<br>
 Architecture: Middleware-based <br>
@@ -69,7 +66,8 @@ Prerequisite : install thru menu-view-terminal in Visual Studio<br>
 ├── styles/                # CSS stylesheets<br>
 ├── temp/                  # Temporary files<br>
  
-//////////////////////////////////////////////////////////<br>
+//////////////////////////////////////////////////////////<br><br>
+
 <b> ⭐ 7. program.cs for Asp.Net Core</b><br>
 <br>
 ------------------------------------------------------------------------------<br>
