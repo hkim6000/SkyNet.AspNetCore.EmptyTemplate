@@ -16,55 +16,6 @@ Architecture: Middleware-based <br>
 support: hkim6000@gmail.com<br><br>
 
 
-<h3>Introduction</h3>
-The SkyNetDemo project serves as a comprehensive and practical showcase of the SkyNet framework's capabilities for building modern, data-driven web applications on ASP.NET Core. It demonstrates how various UI controls and core framework features can be seamlessly integrated to create a cohesive, interactive, and personalized user experience.
-The application presents a classic dashboard-style interface, typical of an administrative portal or a logged-in user's home page, and effectively utilizes the framework's server-centric, AJAX-driven architecture built on modern ASP.NET Core middleware.
-SkyNet is the next-generation evolution of the SKYLITE framework(.Net framework 4.5+), rebuilt from the ground up for ASP.NET Core and .NET 10, providing a modern, cross-platform foundation while maintaining the same elegant patterns and developer-friendly API.
-
-<h3>Architectural and Feature Highlights</h3>
-<b>1. Core Architectural Patterns & Design Choices</b><br>
-The project consistently follows several powerful architectural patterns that are central to the SkyNet philosophy:<br><br>
-
-<b>Middleware-Based Architecture</b><br>
-•	Custom IHandler Middleware: SkyNet operates as ASP.NET Core middleware, registered via app.UseMiddleware<IHandler>() in Program.cs<br>
-•	Clean integration with the ASP.NET Core pipeline while maintaining framework independence<br>
-•	Full control over request/response lifecycle without the constraints of MVC or Razor Pages<br>
-
-<b>Single-Page Application (SPA)-like Navigation</b><br>
-•	The application avoids full page reloads for most actions<br>
-•	A main "shell" page (e.g., XysUser/XysUser.cs) loads the master layout<br>
-•	Content area is dynamically replaced with partial views (MV or EV) using ApiResponse commands (SetElementContents)<br>
-•	Creates a seamless, modern user experience with minimal JavaScript<br>
-
-<b>Robust Role-Based Access Control (RBAC)</b><br>
-•	Security is deeply integrated throughout the framework<br>
-•	The WebBase class centralizes permission checking for both page access (ViewAccess()) and specific actions/methods (ViewMethods())<br>
-•	UI is dynamically rendered based on these permissions, ensuring users only see and interact with functions they are authorized to use<br>
-•	Database-driven permission matrix for flexible security configuration<br><br>
-
-<b>2. Code-Level Best Practices</b><br><br>
-<b>Security First</b><br>
-•	Parameterized Queries: All data manipulation functions use SqlParameter lists to prevent SQL injection vulnerabilities<br>
-•	Encrypted Passwords: Encryptor.EncryptData() for secure password storage<br>
-•	Encrypted Cookies: SerializeObjectEnc() for secure session data<br>
-•	Time-Limited Download Tokens: File downloads protected with encrypted, expiring URLs<br>
-•	Method-Level Permissions: Every API method checked against user role permissions<br><br>
-<b>Clean Architecture</b><br>
-•	Centralized Constants: References structure provides single source for page names, session keys, element IDs<br>
-•	Separation of Concerns: Clear boundaries between data access, business logic, and presentation<br>
-•	Reusable Components: Base classes and shared utilities minimize code duplication<br><br>
-<b>Thin Client Pattern</b><br>
-•	JavaScript files kept minimal<br>
-•	Primary responsibilities: DOM data collection and $ApiRequest initiation<br>
-•	All significant logic, validation, and UI orchestration handled securely on server<br>
-•	Reduces client-side complexity and attack surface<br><br>
-<b>Modern .NET Practices</b><br>
-•	Built on ASP.NET Core and .NET 10<br>
-•	Cross-platform compatibility (Windows, Linux, macOS)<br>
-•	Can run on IIS, Kestrel, or Docker<br>
-•	Cloud-ready and container-friendly<br>
-________________________________________
-
 <h3>Project Structure</h3><br>
 ASPNETCoreWeb/<br>
 ├── Codes/              # web page classes (C#)<br>
@@ -92,53 +43,8 @@ ASPNETCoreWeb/<br>
 ├── Program.cs             # ASP.NET Core startup<br><br>
 
 
-**** unzip "bin_folder_backup.zip" to restore project-bin-folder<br>
-
-
-<br>
-<h3>Key Features Demonstrated</h3><br>
-<b>Complete Authentication System</b><br>
-•	Secure login with encrypted passwords<br>
-•	Email-based registration with OTP verification<br>
-•	Password reset flow<br>
-•	Session management with encrypted cookies<br>
-•	Two-factor authentication support<br><br>
-<b>User & Role Management</b><br>
-•	Full CRUD operations for users<br>
-•	Role assignment and management<br>
-•	Hierarchical permission system<br>
-•	User profile with photo upload<br>
-•	Account status management (active/suspended/terminated)<br><br>
-<b>Permission Matrix</b><br>
-•	Page-level access control<br>
-•	Menu-level permissions<br>
-•	Button/action-level permissions<br>
-•	Dynamic UI based on user role<br>
-•	Database-driven permission configuration<br><br>
-<b>Multi-Language Support</b><br>
-•	Complete translation system<br>
-•	Language selection per user<br>
-•	Page-specific and global translations<br>
-•	Fallback language support<br>
-•	Dictionary management UI<br><br>
-<b>Data Management</b><br>
-•	Dynamic grid with sorting, paging, filtering<br>
-•	Excel-like data entry forms<br>
-•	File upload and management<br>
-•	Bulletin/announcement system<br>
-•	Audit logging (SYSDTE, SYSUSR fields)<br><br>
-<b>Modern UI Components</b><br>
-All components from SkyNet ToolKit:<br>
-•	Texts (text, password, email, date, number, etc.)<br>
-•	Dropdown (with database binding)<br>
-•	CheckBox, Switch, Button<br>
-•	TextArea, FileUpload, ImageBox<br>
-•	Grid, SQLGridSection, DataGrid<br>
-•	DialogBox, FilterSection, MenuList<br>
-•	TitleSection2, ItemPanel, TreeView<br><br>
-
-
-----------------------------------------------------------------------------------------<br>
+**** unzip "ASPNETCoreEmpty.zip" and execute solution file(ASPNETCoreEmpty.slnx) to build your project from scratch<br>
+ ----------------------------------------------------------------------------------------<br>
 
 <h3>Getting Started for Your Own Asp.Net Core Project</h3><br>
 //////////////////////////////////////////////////////////<br>
