@@ -10,8 +10,8 @@ Architecture: Middleware-based <br>
 - Showcase Demo. Site: https://www.theskylite.com/SkyLiteProject<br>
 - Download GitHub: https://github.com/hkim6000/SkyNetDemo-AspNetCore<br><br>
 
+<h4>unzip "ASPNETCoreEmpty.zip" and execute solution file(ASPNETCoreEmpty.slnx) to build your project from scratch<br></h4>
 support: hkim6000@gmail.com<br><br>
-
 
 <h3>Project Structure</h3><br>
 ASPNETCoreWeb/<br>
@@ -39,8 +39,6 @@ ASPNETCoreWeb/<br>
 ├── temp/                  # Temporary files<br>
 ├── Program.cs             # ASP.NET Core startup<br><br>
 
-
-**** unzip "ASPNETCoreEmpty.zip" and execute solution file(ASPNETCoreEmpty.slnx) to build your project from scratch<br>
  ----------------------------------------------------------------------------------------<br>
 
 <h3>Getting Started for Your Own Asp.Net Core Project</h3><br>
